@@ -12,16 +12,16 @@
 
 #include "libfh.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-	if(c >= 0 && c <= 127)
-		return 1;
-	return 0;
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }
 
 //#include <ctype.h>
 //#include <stdio.h>
-//int main(void)
+// int main(void)
 //{
 //        unsigned char c1;
 //        unsigned char c2;
@@ -40,5 +40,5 @@ int ft_isascii(int c)
 //	printf("  0: %d ->%d\n", isascii(0), ft_isascii(0));
 //	printf(" -1: %d ->%d\n", isascii(-1), ft_isascii(-1));
 //	printf("200: %d ->%d\n", isascii(200), ft_isascii(200));
-//	return 0;
+//	return (0);
 //}

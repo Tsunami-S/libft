@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-	if(c >= 32 && c <= 126)
-		return 1;
-	return 0;
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
 }
 
 //#include <stdio.h>
-//int main(void)
+// int main(void)
 //{
 //      unsigned char c1;
 //      unsigned char c2;
@@ -36,5 +36,5 @@ int ft_isprint(int c)
 //      printf("\'%c\' -> %d\n", c4, ft_isprint(c4));
 //      printf("\'\\0\' -> %d\n", ft_isprint('\0'));
 //      printf("\'\\n\' -> %d\n", ft_isprint('\n'));
-//      return 0;
+//      return (0);
 //}

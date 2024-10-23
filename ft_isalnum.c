@@ -12,18 +12,18 @@
 
 #include "libft.h"
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-	if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-                return 1;
-	else if(c >= '0' && c <= '9')
-                return 1;
-	return 0;
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
 }
 
 //#include <ctype.h>
 //#include <stdio.h>
-//int main(void)
+// int main(void)
 //{
 //	unsigned char c1;
 //	unsigned char c2;
@@ -39,5 +39,5 @@ int ft_isalnum(int c)
 //	printf("\'%c\': %d ->%d\n", c2, isalnum(c2), ft_isalnum(c2));
 //	printf("\'%c\': %d ->%d\n", c3, isalnum(c3), ft_isalnum(c3));
 //	printf("\'%c\': %d ->%d\n", c4, isalnum(c4), ft_isalnum(c4));
-//	return 0;
+//	return (0);
 //}
