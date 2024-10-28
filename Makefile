@@ -46,4 +46,4 @@ bonus:
 %.o:%.c
 	$(CC) $(WFLAG) $(IFLAG) -c $< -o $@
 
-.PHONY: all clenan fclean re
+.PHONY: all clean fclean re
