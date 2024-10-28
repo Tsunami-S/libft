@@ -6,7 +6,7 @@
 /*   By: tssaito <tssaito@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:35:22 by tssaito           #+#    #+#             */
-/*   Updated: 2024/10/28 17:08:10 by tssaito          ###   ########.fr       */
+/*   Updated: 2024/10/28 22:58:53 by tssaito          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ t_list	*ft_lstlast(t_list *lst)
 {
 	t_list	*ans;
 
-	if(lst == NULL)
-		return NULL;
+	if (lst == NULL)
+		return (NULL);
 	ans = lst;
 	while (ans->next != NULL)
 		ans = ans->next;

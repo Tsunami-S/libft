@@ -6,17 +6,17 @@
 /*   By: tssaito <tssaito@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 13:49:08 by tssaito           #+#    #+#             */
-/*   Updated: 2024/10/28 18:21:08 by tssaito          ###   ########.fr       */
+/*   Updated: 2024/10/28 22:59:19 by tssaito          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isspace(char c)
+int	ft_isspace(char c)
 {
 	if (c == ' ' || (9 <= c && c <= 13))
-		return 1;
-	return 0;
+		return (1);
+	return (0);
 }
 
 int	ft_atoi(const char *nptr)
