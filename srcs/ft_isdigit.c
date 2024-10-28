@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tssaito <tssaito@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 15:28:07 by tssaito           #+#    #+#             */
-/*   Updated: 2024/10/23 16:39:28 by tssaito          ###   ########.fr       */
+/*   Created: 2024/10/23 13:25:36 by tssaito           #+#    #+#             */
+/*   Updated: 2024/10/26 15:11:37 by tssaito          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+int	ft_isdigit(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	else if (c >= '0' && c <= '9')
+	if ('0' <= c && c <= '9')
 		return (1);
 	return (0);
 }
@@ -25,19 +23,19 @@ int	ft_isalnum(int c)
 //#include <stdio.h>
 // int main(void)
 //{
-//	unsigned char c1;
-//	unsigned char c2;
-//	unsigned char c3;
-//	unsigned char c4;
+//        unsigned char c1;
+//        unsigned char c2;
+//        unsigned char c3;
+//        unsigned char c4;
 //
-//	c1 = 'a';
-//	c2 = 'A';
-//	c3 = '1';
-//	c4 = ' ';
+//        c1 = 'a';
+//        c2 = 'A';
+//        c3 = '1';
+//        c4 = ' ';
 //
-//	printf("\'%c\': %d ->%d\n", c1, isalnum(c1), ft_isalnum(c1));
-//	printf("\'%c\': %d ->%d\n", c2, isalnum(c2), ft_isalnum(c2));
-//	printf("\'%c\': %d ->%d\n", c3, isalnum(c3), ft_isalnum(c3));
-//	printf("\'%c\': %d ->%d\n", c4, isalnum(c4), ft_isalnum(c4));
+//        printf("\'%c\': %d ->%d\n", c1, isdigit(c1), ft_isdigit(c1));
+//        printf("\'%c\': %d ->%d\n", c2, isdigit(c2), ft_isdigit(c2));
+//        printf("\'%c\': %d ->%d\n", c3, isdigit(c3), ft_isdigit(c3));
+//        printf("\'%c\': %d ->%d\n", c4, isdigit(c4), ft_isdigit(c4));
 //	return (0);
 //}

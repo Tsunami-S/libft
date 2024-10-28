@@ -6,15 +6,15 @@
 /*   By: tssaito <tssaito@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 15:37:12 by tssaito           #+#    #+#             */
-/*   Updated: 2024/10/23 16:38:55 by tssaito          ###   ########.fr       */
+/*   Updated: 2024/10/27 17:52:39 by tssaito          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libfh.h"
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
-	if (c >= 0 && c <= 127)
+	if (0 <= c && c <= 127)
 		return (1);
 	return (0);
 }

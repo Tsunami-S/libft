@@ -1,34 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tssaito <tssaito@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 13:22:56 by tssaito           #+#    #+#             */
-/*   Updated: 2024/10/23 19:30:47 by tssaito          ###   ########.fr       */
+/*   Created: 2024/10/23 15:28:07 by tssaito           #+#    #+#             */
+/*   Updated: 2024/10/26 14:32:36 by tssaito          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_islower(int c)
+int	ft_isalnum(int c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (1);
-	return (0);
-}
-
-int	ft_isupper(int c)
-{
-	if (c >= 'A' && c <= 'Z')
-		return (1);
-	return (0);
-}
-
-int	ft_isalpha(int c)
-{
-	if (ft_islower(c) || ft_isupper(c))
+	if (ft_isdigit(c) || ft_isalpha(c))
 		return (1);
 	return (0);
 }
@@ -47,9 +33,9 @@ int	ft_isalpha(int c)
 //	c3 = '1';
 //	c4 = ' ';
 //
-//	printf("\'%c\': %d ->%d\n", c1, isalpha(c1), ft_isalpha(c1));
-//	printf("\'%c\': %d ->%d\n", c2, isalpha(c2), ft_isalpha(c2));
-//	printf("\'%c\': %d ->%d\n", c3, isalpha(c3), ft_isalpha(c3));
-//	printf("\'%c\': %d ->%d\n", c4, isalpha(c4), ft_isalpha(c4));
+//	printf("\'%c\': %d ->%d\n", c1, isalnum(c1), ft_isalnum(c1));
+//	printf("\'%c\': %d ->%d\n", c2, isalnum(c2), ft_isalnum(c2));
+//	printf("\'%c\': %d ->%d\n", c3, isalnum(c3), ft_isalnum(c3));
+//	printf("\'%c\': %d ->%d\n", c4, isalnum(c4), ft_isalnum(c4));
 //	return (0);
 //}

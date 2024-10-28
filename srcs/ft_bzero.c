@@ -6,29 +6,20 @@
 /*   By: tssaito <tssaito@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 20:51:26 by tssaito           #+#    #+#             */
-/*   Updated: 2024/10/23 20:58:56 by tssaito          ###   ########.fr       */
+/*   Updated: 2024/10/26 15:36:53 by tssaito          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	size_t i;
-	unsigned char *ans;
-
-	i = 0;
-	ans = (unsigned char*)s;
-	while(i < n)
-	{
-		ans[i] = 0;
-		i++;
-	}
+	ft_memset(s, 0, n);
 }
 
 //#include <string.h>
 //#include <stdio.h>
-//int main(void)
+// int main(void)
 //{
 //	char str1[] = "abcde";
 //	char str2[] = "abcde";
@@ -52,5 +43,5 @@ void ft_bzero(void *s, size_t n)
 //		i++;
 //	}
 //	putchar('\n');
-//	return 0;
+//	return (0);
 //}
