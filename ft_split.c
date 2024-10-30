@@ -6,16 +6,18 @@
 /*   By: tssaito <tssaito@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 22:39:27 by tssaito           #+#    #+#             */
-/*   Updated: 2024/10/28 22:11:03 by tssaito          ###   ########.fr       */
+/*   Updated: 2024/10/30 15:22:55 by tssaito          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ss_count(char const *str, char c)
+int	strs_count(char const *str, char c)
 {
 	int	count;
 
+	if (str == NULL)
+		return (0);
 	count = 1;
 	while (*str)
 	{
@@ -28,6 +30,16 @@ int	ss_count(char const *str, char c)
 				str++;
 		}
 	}
+	return (count);
+}
+
+int	ft_strlen_s(char const *str, char c)
+{
+	int	count;
+
+	count = 0;
+	while (*(str + count) && *(str + count) != c)
+		count++;
 	return (count);
 }
 
@@ -71,9 +83,11 @@ char	**ft_split(char const *s, char c)
 {
 	char	**ans;
 	char	**tmp;
-	int		tmp_len;
+	int		len;
 
-	ans = (char **)malloc(sizeof(char *) * ss_count(s, c));
+	if (s == NULL)
+		return (NULL);
+	ans = (char **)malloc(sizeof(char *) * strs_count(s, c));
 	if (ans == NULL)
 		return (NULL);
 	tmp = ans;
@@ -81,15 +95,13 @@ char	**ft_split(char const *s, char c)
 	{
 		while (*s == c)
 			s++;
-		tmp_len = 0;
-		while (*(s + tmp_len) && *(s + tmp_len) != c)
-			tmp_len++;
-		if (tmp_len == 0)
+		len = ft_strlen_s(s, c);
+		if (len == 0)
 			break ;
-		*tmp = ft_strdup_c(s, tmp_len);
+		*tmp = ft_strdup_c(s, len);
 		if (*tmp == NULL)
 			return (all_free(ans));
-		s += tmp_len;
+		s += len;
 		tmp++;
 	}
 	*tmp = NULL;
