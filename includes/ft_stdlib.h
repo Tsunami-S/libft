@@ -6,13 +6,14 @@
 /*   By: tssaito <tssaito@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 20:22:16 by tssaito           #+#    #+#             */
-/*   Updated: 2024/11/08 11:28:13 by tssaito          ###   ########.fr       */
+/*   Updated: 2024/11/08 13:14:22 by tssaito          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_STDLIB_H
 # define FT_STDLIB_H
 
+#include <stdint.h>
 #include <limits.h>
 #include <stddef.h>
 #include <stdlib.h>
