@@ -6,7 +6,7 @@
 /*   By: tssaito <tssaito@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 17:00:27 by tssaito           #+#    #+#             */
-/*   Updated: 2024/11/08 11:29:20 by tssaito          ###   ########.fr       */
+/*   Updated: 2024/11/11 14:04:13 by tssaito          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ans;
 
-	if (size && nmemb > (size_t)(-1) / size)
+	if (size && nmemb > SIZE_MAX / size)
 		return (NULL);
 	if (!nmemb || !size)
 	{
