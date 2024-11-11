@@ -6,7 +6,7 @@
 /*   By: tssaito <tssaito@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 14:50:33 by tssaito           #+#    #+#             */
-/*   Updated: 2024/11/08 11:32:49 by tssaito          ###   ########.fr       */
+/*   Updated: 2024/11/11 13:20:29 by tssaito          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	if (!dest && !src)
 		return (NULL);
-	copy_dest = dest;
-	copy_src = src;
+	copy_dest = (unsigned char *)dest;
+	copy_src = (const unsigned char *)src;
 	i = 0;
 	d = 1;
 	if (dest > src)
