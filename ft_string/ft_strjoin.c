@@ -6,7 +6,7 @@
 /*   By: tssaito <tssaito@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 20:32:49 by tssaito           #+#    #+#             */
-/*   Updated: 2024/11/07 22:08:24 by tssaito          ###   ########.fr       */
+/*   Updated: 2024/11/11 13:19:12 by tssaito          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
-	ans = (char *)malloc(sizeof(char) * s1_len + s2_len + 1);
+	ans = (char *)malloc(sizeof(char) * (s1_len + s2_len + 1));
 	if (!ans)
 		return (NULL);
 	ft_strlcpy(ans, s1, s1_len + 1);
